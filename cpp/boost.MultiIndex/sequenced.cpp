@@ -60,6 +60,10 @@ int main()
   text_tokenizer tok(text,boost::char_separator<char>(" \t\n.,;:!?'\"-"));
   std::copy(tok.begin(),tok.end(),std::back_inserter(tc));
 
+  std::cout << "sequenced list: " << std::endl;
+  std::copy(tc.begin(), tc.end(), std::ostream_iterator<std::string>(std::cout, " "));
+  std::cout << std::endl;
+
   /* list all words in alphabetical order along with their number
    * of occurrences
    */
