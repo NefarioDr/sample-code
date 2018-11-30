@@ -1,0 +1,18 @@
+以代码的形式，详细记录如何使用node-gyp和nan编写一个node addon。
+
+包括以下内容：
+
+
+1.　binding.gyp的格式，以及其中各字段所代表的含义、所支持的参数。
+
+2.　NODE_MODULE()的编写(导出模块、导出方法、导出对象)。
+
+3.　JS中传入的数据如何转成C++的数据。
+
+4.　C++中通过GetReturnValue()的方式返回JS的数据(基本数据、Object、Function等)
+
+5.　C++中实现回调(保存方法、生成参数)。
+
+6.　在C++中动态生成FunctionTemplate、ObjectTemplate对象。
+
+7.　在C++中支持JS的‘new’语法（ObjectWrap）。
